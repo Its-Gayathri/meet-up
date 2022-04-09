@@ -2,12 +2,10 @@ import { Route, Routes } from "react-router-dom";
 import AllMeetupsPage from "./pages/AllMeetUp";
 import FavouritePage from "./pages/Favourites";
 import NewMeetupPage from "./pages/NewMeetUp";
-import MainNavigation from "./components/Layout/MainNavigation";
-
+import Layout from "./components/layout/Layout";
 function App() {
   return (
-    <div>
-      <MainNavigation />
+    <Layout>
       <Routes>
         <Route path="/" element={<AllMeetupsPage />}></Route>
 
@@ -15,7 +13,7 @@ function App() {
 
         <Route path="/favourites" element={<FavouritePage />}></Route>
       </Routes>
-    </div>
+    </Layout>
   );
 }
 
