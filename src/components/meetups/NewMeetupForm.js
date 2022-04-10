@@ -20,7 +20,7 @@ function NewMeetupForm(props) {
         address: enteredAddress,
         description: enteredDescription,
     };
-    props.onAddMeetup(meetupData);
+    props.onAddMeetup(meetupData);//calling parent function with arg
   }
   return (
     <Card>
